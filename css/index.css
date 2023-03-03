@@ -1,0 +1,30 @@
+body {
+    background: orangered;
+}
+
+.entrada {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    font-size: 3.4em;
+    color: #fafafa;
+    width: 600px;
+    border-right: 2px solid rgba(0, 0, 0, 0.87);
+    animation: escribir 2.8s steps(23, end),
+        cursor 1s step-end infinite;
+}
+
+@keyframes escribir {
+    0% { width: 0;}
+    100% { width: 600px;}
+}
+
+@keyframes cursor {
+    0%,
+    100% {
+        border-color: rgba(241, 59, 59, 0);
+    }
+    50%{
+        border-color: rgba(249, 248, 248, 0.87);
+    }
+}
